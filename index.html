@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <meta name="description" content="" />
     <meta name="keywords" content="" />
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="./styleseet.css">
 </head>
 <body>
-<header>
-    <h1 class="header-title">XeoryExtension</h1>
+<header class="header">
+    <h1 class="header-title"><a href="">XeoryExtension</a></h1>
     <dl class="nav">
         <dt class="nav-title">ブログコンテンツ</dt>
         <dd class="nav-link"><a href="">記事ページサンプル</a></dd>
@@ -17,13 +17,14 @@
     </dl>
 </header>
 <main>
-<article>
+<article class="article">
     <header class="main-area">
     <h2 class="main-area-title">Xeory Extension</h2>
     <p class="main-area-lead">Xeory Extensionはワンコラムのサイト型テーマです。ユーザーに対して重要なコンテンツを効率的に届けられるようにデザインされています。５種類のカラーバリエーションを用意しています。</p>
     </header>
     <section class="entries">
         <h3 class="entries-title">人気のある記事</h3>
+        <div class="entry-section">
         <section class="entry">
             <h4 class="entry-title"><a href="">テスト投稿</a></h4>
             <p class="entry-item">カテゴリー#1</p>
@@ -49,9 +50,11 @@
             <p class="entry-item">カテゴリー#5</p>
             <figure class="entry-image"><img src="./images/download-1.png" alt=""></figure>
         </section>
+        </div>
     </section>
     <section class="entries">
         <h3 class="entries-title">最近の記事</h3>
+        <div class="entry-section">
         <section class="entry">
             <h4 class="entry-title"><a href="">テスト投稿</a></h4>
             <p class="entry-item">カテゴリー#1</p>
@@ -77,48 +80,51 @@
             <p class="entry-item">カテゴリー#1</p>
             <figure class="entry-image"><img src="./images/download.png" alt=""></figure>
         </section>
+        </div>
     </section>
     <section class="content">
-        <h3 class="content-title">Xeory Extensionの特徴<span>feature</span></h3>
+        <h3 class="content-title">Xeory Extensionの特徴<br><span class="content-span">feature</span></h3>
         <section class="feature">
             <figure class="feature-image"><img src="./images/download-2.png" alt=""></figure>
-            <h4 class="feature-title"><span>1</span>モバイルレスポンス<span>Mobile Responsive</span></h4>
+            <h4 class="feature-title"><span class="feature-span-1">1</span><br>モバイルレスポンス<br><span class="feature-span-2">Mobile Responsive</span></h4>
             <p class="feature-lead">Xeory Extensionはレスポンシブデザインを採用しています。スマートフォンやタブレットなど各種デバイスで表示が最適化されます。</p>
-            <p class="btn orange"><a href="">詳しく見る</a></p>
+            <p class="btn-orange"><a href="">詳しく見る</a></p>
         </section>
         <section class="feature">
             <figure class="feature-image"><img src="./images/download-2.png" alt=""></figure>
-            <h4 class="feature-title"><span>2</span>HTML5デザイン<span>HTML5 design</span></h4>
+            <h4 class="feature-title"><span class="feature-span-1">2</span><br>HTML5デザイン<br><span class="feature-span-2">HTML5 design</span></h4>
             <p class="feature-lead">Xeory Extensionは最新のHTML5言語でデザイン及びコーディングがなされています。時代遅れのソースからは卒業しましょう。</p>
-            <p class="btn orange"><a href="">詳しく見る</a></p>
+            <p class="btn-orange"><a href="">詳しく見る</a></p>
         </section>
         <section class="feature">
             <figure class="feature-image"><img src="./images/download-2.png" alt=""></figure>
-            <h4 class="feature-title"><span>3</span>SEO最適化<span>Search Engine Optimized</span></h4>
+            <h4 class="feature-title"><span class="feature-span-1">3</span><br>SEO最適化<br><span class="feature-span-2">Search Engine Optimized</span></h4>
             <p class="feature-lead">Xeory Extensionは最新のHTML5言語でデザイン及びコーディングがなされています。時代遅れのソースからは卒業しましょう。</p>
-            <p class="btn orange"><a href="">詳しく見る</a></p>
+            <p class="btn-orange"><a href="">詳しく見る</a></p>
         </section>
         <section class="feature">
             <figure class="feature-image"><img src="./images/download-2.png" alt=""></figure>
-            <h4 class="feature-title"><span>4</span>高いカスタマイズ<span>Customizable</span></h4>
+            <h4 class="feature-title"><span class="feature-span-1">4</span><br>高いカスタマイズ<br><span class="feature-span-2">Customizable</span></h4>
             <p class="feature-lead">Xeory Extensionはカスタマイズフリーです。CSS, HTML, PHP の知識があれば自由にカスタマイズすることができます。
             </p>
-            <p class="btn orange"><a href="">詳しく見る</a></p>
+            <p class="btn-orange"><a href="">詳しく見る</a></p>
         </section>
     </section>
     <section class="content">
-        <h3 class="content-title">サービス紹介<span>service</span></h3>
+        <h3 class="content-title">サービス紹介<br><span class="content-span">service</span></h3>
+        <div class=service-section>
         <section class="service">
-            <h4 class="service-title">Xeoryカスタマイズ<span>Xeory Customize</span></h4>
-            <p class="btn green"><a href="">カスタマイズ事例を見る</a></p>
+            <h4 class="service-title">Xeoryカスタマイズ<br><span class="service-span">Xeory Customize</span></h4>
+            <p class="btn-green"><a href="">カスタマイズ事例を見る</a></p>
         </section>
         <section class="service">
-            <h4 class="service-title">コンサルティング<span>comsulting</span></h4>
-            <p class="btn green"><a href="">コンサルティング事例を見る</a></p>
+            <h4 class="service-title">コンサルティング<br><span class="service-span">comsulting</span></h4>
+            <p class="btn-green"><a href="">コンサルティング事例を見る</a></p>
         </section>
+        </div>
     </section>
     <section class="content">
-        <h3 class="content-title">会社紹介<span>company</span></h3>
+        <h3 class="content-title">会社紹介<br><span class="content-span">company</span></h3>
         <dl class="table">
             <dt class="table-title">会社名</dt>
             <dd class="table-list">株式会社ルーシー</dd>
@@ -129,8 +135,9 @@
         </dl>
     </section>
     <section class="content">
-        <h3 class="content-title">お問い合わせ<span>inquiry</span></h3>
-        <dl class="form">
+        <h3 class="content-title">お問い合わせ<br><span class="content-span">inquiry</span></h3>
+        <div class="form">
+        <dl>
             <dt class="form-title">お名前（必須）</dt>
             <dd class="form-comment"><input type="text"></dd>
             <dt class="form-title">メールアドレス（必須）</dt>
@@ -140,11 +147,13 @@
             <dt class="form-title">メッセージ本文</dt>
             <dd class="form-comment"><textarea name="" id="" cols="30" rows="10"></textarea></dd>
         </dl>
-        <p class="btn black"><input type="submit"></p>
+        <p class="btn-black"><input type="submit"></p>
+        </div>
     </section>
 </article>
 </main>
 <footer>
+    <div class="footers-section">
     <p class="footers-title">XeoryExtension</p>
     <dl class="footer-content">
         <dt class="footer-title">ブログコンテンツ</dt>
@@ -158,6 +167,7 @@
         <dd class="footer-link"><a href="https://www.google.com/?hl=ja">Google+</a></dd>
         <dd class="footer-link"><a href="https://feedly.com/">Feedly</a></dd>
     </dl>
+    </div>
     <p class="footer-copy"><small>&copy;2020 XeoryExtension. All rights reseved.</small></p>
 </footer>
 </body>
