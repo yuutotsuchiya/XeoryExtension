@@ -1,4 +1,8 @@
-@charset:USF-8;
+@charset:utf-8;
+*{
+    margin:0;
+    padding:0;
+}
 .header{
     background:rgb(68, 179, 158);
     margin:0;
@@ -17,7 +21,7 @@
 }
 .nav{
     display:flex;
-    position: absolute;
+    position:absolute;
     top:0;
     right:0;
 }
@@ -74,8 +78,12 @@
     text-align: center;
 }
 .entry{
-    width:20%;
-    min-width:100px;
+    display:flex;
+    justify-content:center;
+    flex-flow: column-reverse wrap;
+    max-width:200px;
+    min-width:150px;
+    margin:0 10px;
 }
 .entry-title{
     margin:0 10px 12px;
@@ -90,7 +98,6 @@
     background-color: #47b39d;
     font-size:12px;
     color:#fff;
-    margin:auto;
     padding:8px 24px
 }
 .entry-image img{
@@ -106,26 +113,51 @@
     padding:16px 0 24px;
     background-color:#3b4552;
     margin:0;
+    position:relative;
+}
+.content-title:after {
+    content: '';
+    display: block;
+    width:0;
+    height:0;
+    position:absolute;
+    background-color:transparent;
+    bottom:-20px;
+    margin:0 auto;
+    left:0;
+    right:0;
+    border-top:20px solid #3b4552;
+    border-left:60px solid transparent;
+    border-right:60px solid transparent;
+    
 }
 .content-span{
     color:#fff;
     font-size:13px;
     text-align: center;
 }
-.feature{
+.feature-1{
     background-color:#fff;
+    display:flex;
+    /*flex-direction:column-reverse;*/
+    margin:0 36px;
+}
+.feature-2{
+    background-color:#fff;
+    display:flex;
+    /*flex-direction:column;*/
     margin:0 36px;
 }
 .feature-image{
     margin:0 0 24px;
-    width:100%;
+    width:50%;
 }
 .feature-title{
     color:#47b39d;
     font-size:36px;
     margin:0 0 8px;
 }
-.feature-span-1{
+.feature-num{
     background-color:#47b39d;
     color:#fff;
     font-size:16px;
@@ -133,7 +165,7 @@
     padding:40px 12px 8px;
     margin:0 0 32px;
 }
-.feature-span-2{
+.feature-eng{
     color:#47b39d;
     font-size:13px;
     margin:0 0 32px;
@@ -161,7 +193,9 @@
 }
 .service-section{
     display:flex;
-    flex-wrap: wrap;
+    flex-wrap:wrap;
+    min-height:366px;
+    justify-content: space-around;
 }
 .service-title{
     color:#47b39d;
@@ -250,7 +284,8 @@ footer{
 }
 .footers-section{
     margin:0 36px;
-    padding:78px 0px
+    padding:78px 0px;
+    display:
 }
 .footers-title{
     color:#fff;
@@ -267,7 +302,7 @@ footer{
 .footer-link{
     font-size:14px;
     padding:8px 12px 8px 0px;
-    margin:0
+    margin:0;
 }
 .footer-link a {
     color:#fff;
