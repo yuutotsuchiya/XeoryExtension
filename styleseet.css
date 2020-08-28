@@ -178,11 +178,11 @@
 }
 .feature:nth-child(even){
     padding-right:600px;
-    min-width:600px;
+    min-width:500px;
 }
 .feature:nth-child(odd){
     padding-left:600px;
-    min-width:600px;
+    min-width:500px;
 }
 .feature-image{
     position:absolute;
@@ -239,11 +239,11 @@
 .service{
     background-color:#fff;
     margin:0 0 20px;
+    min-width:450px;
 }
 .service-section{
     display:flex;
     flex-wrap:wrap;
-    min-height:366px;
     justify-content: space-around;
 }
 .service-title{
