@@ -118,6 +118,7 @@
 }
 .entry-title{
     margin:0 10px 12px;
+    font-weight:normal;
 }
 .entry-title a{
     color:#000;
@@ -145,6 +146,7 @@
     background-color:#3b4552;
     margin:0;
     position:relative;
+    font-weight:normal;
 }
 .content-title:after {
     content: '';
@@ -160,6 +162,7 @@
     border-top:20px solid #3b4552;
     border-left:60px solid transparent;
     border-right:60px solid transparent;
+    z-index:1;
 }
 .content-en{
     color:#fff;
@@ -205,6 +208,7 @@
     color:#47b39d;
     font-size:36px;
     margin:0 0 8px 10px;
+    font-weight:normal;
 }
 .feature-num{
     background-color:#47b39d;
@@ -238,21 +242,25 @@
 }
 .service{
     background-color:#fff;
-    margin:0 0 20px;
-    min-width:450px;
+    padding-bottom:20px;
+    width:50%;
+}
+.service:nth-child(1){
+    border-right:1px solid #cecece;
+    width:calc(50% - 1px);
 }
 .service-section{
     display:flex;
-    flex-wrap:wrap;
-    justify-content: space-around;
+    flex-wrap: wrap;
 }
 .service-title{
     color:#47b39d;
     margin:80px 0 8px;
     font-size:40px;
     text-align: center;
+    font-weight:normal;
 }
-.service-span{
+.service-en{
     font-size:13px;
     color:#47b39d;
     text-align: center;
@@ -267,29 +275,39 @@
     border-radius:5px;
 }
 .btn-green a{
+    display: inline-block;
     color:#fff;
     text-decoration: none;
 }
 .table{
-    padding:96px 30px;
+    padding:96px 30px 0px 30px;
+    margin-bottom:96px;
     background-color:#fff;
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px solid rgb(229, 229, 229);
+}
+.table-title:first-child{
+    border-top: 2px solid #47B39D;
 }
 .table-title{
+    width:20%;
+    padding:24px 16px;
     font-size:16px;
-    margin: auto;
+    box-sizing:border-box;
+    border-top: 1px solid rgb(229, 229, 229);
 }
 .table-list{
-    border: 1px solid;
-    border-color:rgb(229, 229, 229);
-    border-right:transparent;
-    border-left:transparent;
-    border-top:transparent; 
+    width:80%;
+    box-sizing:border-box;
+    padding:24px 16px;
+    border-top: 1px solid rgb(229, 229, 229);
     margin: auto;
 }
 .form{
     background-color:#47b39d;
-    margin:0 ;
-    padding:60px 33px;
+    margin:0;
+    padding:40px 16px;
 }
 .form-title{
     color:#fff;
@@ -300,20 +318,24 @@
     margin:0;
 }
 .form-comment input{
+    box-sizing: border-box;
     margin:0 0 24.4px;
     padding:8px 13px;
     border-radius:3px;
     border:1px solid;
     border-color:rgb(204,204,204);
-    width:80%;
+    width:100%;
+    max-width:600px;
 }
 .form-comment textarea{
+    box-sizing: border-box;
+    width:100%;
     margin:0 0 24.4px;
     padding:8px 13px;
     border-radius:3px;
     border:1px solid;
     border-color:rgb(204,204,204);
-    width:80%;
+    max-width:600px;
 }
 .btn-black{
     text-align: center;
@@ -327,6 +349,9 @@
     border:none;
     font-size:15px;
     text-align:center;
+}
+.btn-black:hover{
+    opacity:0.8;
 }
 footer{
     background-color:rgb(2,24, 48);
