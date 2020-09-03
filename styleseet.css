@@ -10,7 +10,7 @@
     height:92px;
 }
 .header-title{
-    margin:0 10px;
+    margin:0 1.5px;
     font-size:24px;
     font-weight: normal;
     line-height: 92px
@@ -38,38 +38,48 @@
     color:#fff;
     text-decoration: none;
 }
+.article{
+    background-image: linear-gradient(to top,#fff 0%,#fff 50%,rgb(251, 251, 251) 50.1%,rgb(251, 251, 251) 100%);
+}
 .main-area{
     text-align: center;
     padding:204px 0px 0px;
-    height:680px;
-    background-color:rgb(61, 180, 160);
+    height:600px;
+    background-color:rgb(62, 174, 154);
 }
 .main-area-title{
     display: inline-block;
     text-align: center;
     height: 72px;
     margin:0 0 24px;
-    font-size:24px;
+    font-size:48px;
     color:#fff;
     font-family:"YuGothic,";
+    font-weight: normal;
 }
 .main-area-lead{
     font-size:15px;
     color:#fff;
     font-family:"YuGothic,";
     margin:0 40px;
+    width: 84%;
+    max-width: 600px;
+    margin:0 auto;
+    
 }
 .entries{
     margin: 40px 0;
     padding-bottom:40px;
     border-bottom:1px solid rgb(229, 229, 229);
     border-top:1px solid rgb(229, 229, 229);
+    background: rgb(255, 255, 255)
 }
 .entry-section{
     padding:40px 0;
     display: flex;
     flex-wrap: wrap;
-    justify-content:space-around
+    justify-content:space-around;
+    background: rgb(255, 255, 255)
 }
 .entries-title{
     font-size:24px;
@@ -77,6 +87,8 @@
     margin:0 0.5%;
     border-bottom:1px solid rgb(229, 229, 229);
     text-align: center;
+    background: rgb(255, 255, 255);
+    font-weight: normal;
 }
 .entry{
     display:flex;
@@ -86,6 +98,7 @@
     min-width:150px;
     margin:0 10px;
     position: relative;
+    background: rgb(255, 255, 255)
 }
 .entry:before {
     content:'No.1';
@@ -117,20 +130,23 @@
     content:'No.5';
 }
 .entry-title{
-    margin:0 10px 12px;
+    margin:0;
     font-weight:normal;
 }
 .entry-title a{
     color:#000;
     text-decoration: none;
     font-size:16px;
+    text-align: center;
 }
 .entry-item{
     width:90px;
     background-color: #47b39d;
     font-size:12px;
     color:#fff;
-    padding:8px 24px
+    padding:8px 24px;
+    margin-bottom:12px;
+    text-align: center;
 }
 .entry-image img{
     margin:0 0 12px;
@@ -147,6 +163,7 @@
     margin:0;
     position:relative;
     font-weight:normal;
+    line-height: 100%;
 }
 .content-title:after {
     content: '';
@@ -178,13 +195,14 @@
     height:400px;
     flex-direction:column;
     justify-content:center;
+    border-bottom: 1px solid #e5e5e5;
 }
 .feature:nth-child(even){
     padding-right:600px;
     min-width:500px;
 }
 .feature:nth-child(odd){
-    padding-left:600px;
+    padding-left:700px;
     min-width:500px;
 }
 .feature-image{
@@ -216,7 +234,8 @@
     font-size:16px;
     text-align: left;
     padding:40px 12px 8px;
-    margin:0 0 32px;
+    position: absolute;
+    top: 0;
 }
 .feature-eng{
     color:#47b39d;
@@ -229,12 +248,13 @@
 }
 .btn-orange{
     background-color:#ff6c00;
-    width:50%;
+    width:30%;
     padding:12px;
     font-size:14px;
     margin:0 0 48px 10px;
     text-align: center;
     border-radius:5px;
+    text-shadow: 0 0 3px rgba(0, 0, 0, 0.5)
 }
 .btn-orange a{
     color:#fff;
@@ -242,7 +262,7 @@
 }
 .service{
     background-color:#fff;
-    padding-bottom:20px;
+    padding-bottom:96px;
     width:50%;
 }
 .service:nth-child(1){
@@ -255,10 +275,11 @@
 }
 .service-title{
     color:#47b39d;
-    margin:80px 0 8px;
+    padding:96px 0 32px;
     font-size:40px;
     text-align: center;
     font-weight:normal;
+    line-height: 95%
 }
 .service-en{
     font-size:13px;
@@ -269,10 +290,11 @@
     padding:16px 20px;
     margin:0 auto;
     text-align: center;
-    width:50%;
+    width:35%;
     background-color:#47b39d;
     color:#fff;
     border-radius:5px;
+    text-shadow: 0 0 3px rgba(0, 0, 0, 0.5)
 }
 .btn-green a{
     display: inline-block;
@@ -280,8 +302,9 @@
     text-decoration: none;
 }
 .table{
-    padding:96px 30px 0px 30px;
+    padding:96px 0px 0px 0px;
     margin-bottom:96px;
+    margin-right: ;
     background-color:#fff;
     display: flex;
     flex-wrap: wrap;
@@ -355,6 +378,7 @@
 }
 footer{
     background-color:rgb(2,24, 48);
+    border-top:8px solid #3B4552;
 }
 .footers-section{
     margin:0 36px;
@@ -367,9 +391,11 @@ footer{
     color:#fff;
     font-size:24px;
     padding:0 0 0px;
-    margin:0 0 32px;
+    padding-bottom:32px;
+    margin-bottom:32px;
     border-bottom:1px solid;
     border-bottom-color:rgb(59, 69, 82);
+    font-weight: normal;
 }
 .footer-content{
     padding:0 15px;
@@ -393,4 +419,5 @@ footer{
     margin:0 12px;
     padding:30px 0;
     text-align: center;
+    font: 12px;
 }
