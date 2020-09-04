@@ -38,6 +38,13 @@
     color:#fff;
     text-decoration: none;
 }
+.nav-link a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all  0.3s ease;
+}
 .article{
     background-image: linear-gradient(to top,#fff 0%,#fff 50%,rgb(251, 251, 251) 50.1%,rgb(251, 251, 251) 100%);
 }
@@ -138,6 +145,10 @@
     text-decoration: none;
     font-size:16px;
     text-align: center;
+}
+.entry-title a:hover{
+    text-decoration: underline;
+    text-decoration-color: #47b39d;
 }
 .entry-item{
     width:90px;
@@ -246,19 +257,32 @@
     font-size:12px;
     margin:0 0 48px 10px;
 }
-.btn-orange{
-    background-color:#ff6c00;
-    width:30%;
-    padding:12px;
-    font-size:14px;
-    margin:0 0 48px 10px;
-    text-align: center;
-    border-radius:5px;
-    text-shadow: 0 0 3px rgba(0, 0, 0, 0.5)
+.btn{
+    display: block;
 }
-.btn-orange a{
+.btn.orange{
+    background-color:#ff6c00;
+    width: 30%;
+    margin:0 0 48px 10px;
+    border-radius:5px;
+}
+.btn.orange a{
+    display: inline-block;
+    box-sizing: border-box;
     color:#fff;
     text-decoration: none;
+    width: 100%;
+    text-align: center;
+    padding:12px;
+    text-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+    border-radius:5px;
+}
+.btn:hover {
+    opacity: 0.7;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all  0.3s ease;
 }
 .service{
     background-color:#fff;
@@ -286,8 +310,7 @@
     color:#47b39d;
     text-align: center;
 }
-.btn-green{
-    padding:16px 20px;
+.btn.green{
     margin:0 auto;
     text-align: center;
     width:35%;
@@ -296,10 +319,17 @@
     border-radius:5px;
     text-shadow: 0 0 3px rgba(0, 0, 0, 0.5)
 }
-.btn-green a{
+.btn.green a {
+    font-size: 16px;
+    padding: 16px 20px;
     display: inline-block;
-    color:#fff;
+    color: #fff;
+    text-align: center;
     text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    background-color: #47B39D;
+    text-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
 }
 .table{
     padding:96px 0px 0px 0px;
@@ -360,10 +390,10 @@
     border-color:rgb(204,204,204);
     max-width:600px;
 }
-.btn-black{
+.btn.black{
     text-align: center;
 }
-.btn-black input{
+.btn.black input{
     width:15%;
     background-color:#000;
     color:#fff;
