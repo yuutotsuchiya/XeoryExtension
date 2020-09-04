@@ -231,7 +231,6 @@
 }
 .feature:nth-child(odd) .feature-image{
     left:0;
-    
 }
 .feature-title{
     color:#47b39d;
@@ -487,9 +486,11 @@ footer{
     }
   .feature-title{
     padding-top: 7px;
+    margin:0 0 8px 0px;
     }
   .feature-num{
     position: static;
+    padding:34px 12px 8px;
     }
   .feature:nth-child(even) {
     padding:0;
@@ -510,12 +511,30 @@ footer{
     height:auto;
   }
   .feature-image img{
-    padding-top: px;
     position: static;
     width:100%;
     height: auto;
   }
+  .feature-lead{
+    font-size:12px;
+    margin:48px 0 48px 10px;
+  }
   .btn.orange{
     margin: 0 auto 48px;
   }
+  .service-section{
+    display: block;
+  }
+  .service{
+    background-color:#fff;
+    padding-bottom:96px;
+    width:100%;
+  }
+.service:nth-child(1){
+    border-right:0px solid #cecece;
+    width:100%;
+  }
+}
+@media screen and (max-width:500px) {
+    
 }
